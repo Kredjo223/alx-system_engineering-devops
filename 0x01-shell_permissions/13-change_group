@@ -1,2 +1,3 @@
 #!/bin/bash
+mkdir school
 chown school hello
