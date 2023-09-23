@@ -1,2 +1,7 @@
 #!bin/bash
-ls -la > ls_cwd_content
+ls -la >> ls_cwd_content
+if [ $? -eq 0 ]; then
+  echo "ls -la command executed successfully. Output saved to ls_cwd_content."
+else
+  echo "Error executing ls -la command."
+fi
